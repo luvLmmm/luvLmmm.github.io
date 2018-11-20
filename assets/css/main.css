@@ -441,7 +441,6 @@
 			color: #999999;
 		}
 
-/* Form */
 
 	form {
 		margin: 0 0 2em 0;
@@ -725,8 +724,6 @@
 
 		}
 
-/* Image */
-
 	.image {
 		border-radius: 4px;
 		border: 0;
@@ -778,8 +775,6 @@
 			.image.main img {
 				width: 100%;
 			}
-
-/* List */
 
 	ol {
 		list-style: decimal;
@@ -948,8 +943,6 @@
 		border-top-color: #666666;
 	}
 
-/* Table */
-
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
@@ -1034,8 +1027,6 @@
 	table.alt tbody tr td {
 		border-color: #666666;
 	}
-
-/* Item */
 
 	.item {
 		padding: 3em 3em 1em 3em;
@@ -1260,8 +1251,6 @@
 
 		}
 
-/* Header */
-
 	#header {
 		background-color: #444;
 		color: rgba(255, 255, 255, 0.75);
@@ -1426,8 +1415,6 @@
 
 		}
 
-/* Main */
-
 	#main {
 		padding: 4em 4em 2em 4em;
 		background-color: #ffffff;
@@ -1453,8 +1440,6 @@
 			}
 
 		}
-
-/* Intro */
 
 	#intro {
 		padding: 4em 4em 2em 4em;
@@ -1483,8 +1468,6 @@
 
 		}
 
-/* CTA */
-
 	#cta {
 		padding: 2em 0 0.1em 0;
 		text-align: center;
@@ -1509,8 +1492,6 @@
 				}
 
 		}
-
-/* Footer */
 
 	#footer {
 		text-align: center;

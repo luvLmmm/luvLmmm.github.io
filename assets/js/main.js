@@ -14,7 +14,6 @@
 		var	$window = $(window),
 			$body = $('body');
 
-		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
 			$window.on('load', function() {
@@ -23,10 +22,8 @@
 				}, 100);
 			});
 
-		// Fix: Placeholder polyfill.
 			$('form').placeholder();
 
-		// Prioritize "important" elements on medium.
 			skel.on('+medium -medium', function() {
 				$.prioritize(
 					'.important\\28 medium\\29',
@@ -34,7 +31,6 @@
 				);
 			});
 
-		// Items.
 			$('.item').each(function() {
 
 				var $this = $(this),
@@ -42,10 +38,8 @@
 					$a = $header.find('a'),
 					$img = $header.find('img');
 
-				// Set background.
 					$a.css('background-image', 'url(' + $img.attr('src') + ')');
 
-				// Remove original image.
 					$img.remove();
 
 			});
