@@ -1,3 +1,9 @@
+/*
+	Caminar by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
 (function($) {
 
 	skel.breakpoints({
@@ -5,15 +11,16 @@
 		large: '(max-width: 1280px)',
 		medium: '(max-width: 980px)',
 		small: '(max-width: 736px)',
-		xsmall: '(max-width: 480px)',
-		xxsmall: '(max-width: 360px)'
+		xsmall: '(max-width: 480px)'
 	});
 
 	$(function() {
 
-		var	$window = $(window),
-			$body = $('body');
+		var	$window 	= $(window),
+			$body 		= $('body'),
+			$header 	= $('#header');
 
+		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
 			$window.on('load', function() {
@@ -22,8 +29,7 @@
 				}, 100);
 			});
 
-			$('form').placeholder();
-
+		// Prioritize "important" elements on medium.
 			skel.on('+medium -medium', function() {
 				$.prioritize(
 					'.important\\28 medium\\29',
@@ -31,18 +37,8 @@
 				);
 			});
 
-			$('.item').each(function() {
-
-				var $this = $(this),
-					$header = $this.find('header'),
-					$a = $header.find('a'),
-					$img = $header.find('img');
-
-					$a.css('background-image', 'url(' + $img.attr('src') + ')');
-
-					$img.remove();
-
-			});
+		// Gallery.
+			$('.gallery').poptrox();
 
 	});
 
